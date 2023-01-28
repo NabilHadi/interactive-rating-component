@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none !important;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.card {
+  background-color: hsl(213, 19%, 18%);
+  width: clamp(300px, 20%, 500px);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 5%;
+  box-shadow: 1px 1px 0px hsla(0, 0%, 0%, 0.14),
+    0px 2px 1px -1px hsla(0, 0%, 0%, 0.12), 0px 1px 3px 0px hsla(0, 0%, 0%, 0.2);
+}
+
+.star-icon,
+.rating-btn {
+  background-color: hsl(213, 19%, 23%);
+  padding: 1rem;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  text-align: center;
+}
+
+.star-icon {
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  font-size: 15px;
+  color: hsl(216, 12%, 54%);
+  margin-bottom: 2rem;
+}
+
+.rating-btns-container {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(216, 12%, 54%);
+  margin-bottom: 2rem;
+}
+.rating-btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.rating-btn.active,
+.rating-btn:active {
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+
+.submit-btn {
+  text-align: center;
+  padding: 0.7rem 0;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 0px hsla(0, 0%, 0%, 0.14),
+    0px 2px 1px -1px hsla(0, 0%, 0%, 0.12), 0px 1px 3px 0px hsla(0, 0%, 0%, 0.2);
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+#thankyou-card {
+  text-align: center;
+}
+
+.thankyou-img {
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.thankyou-rating-score {
+  background-color: hsl(213, 19%, 23%);
+  width: max-content;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+  color: hsla(25, 97%, 53%, 0.815);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
