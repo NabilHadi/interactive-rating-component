@@ -12,6 +12,28 @@ body {
   align-items: center;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  color: inherit;
+  outline: none;
+}
+
 .hide {
   display: none !important;
 }
@@ -41,20 +63,9 @@ body {
   text-align: center;
 }
 
-.star-icon {
-  margin-bottom: 2rem;
-}
-
-.card-title {
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
 .card-desc {
   font-size: 15px;
   color: hsl(216, 12%, 54%);
-  margin-bottom: 2rem;
 }
 
 .rating-btns-container {
@@ -81,8 +92,6 @@ body {
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 1px 1px 0px hsla(0, 0%, 0%, 0.14),
-    0px 2px 1px -1px hsla(0, 0%, 0%, 0.12), 0px 1px 3px 0px hsla(0, 0%, 0%, 0.2);
 }
 
 .submit-btn:hover {
@@ -102,8 +111,8 @@ body {
 .thankyou-rating-score {
   background-color: hsl(213, 19%, 23%);
   width: max-content;
-  margin: 1rem auto;
-  margin-bottom: 2rem;
+  margin: 0 auto;
+  margin-top: 1rem;
   color: hsla(25, 97%, 53%, 0.815);
   padding: 0.5rem 1rem;
   border-radius: 20px;
